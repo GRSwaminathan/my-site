@@ -1,4 +1,4 @@
-//js
+// js
 export default function decorate(block) {
   const greeting = document.createElement('div');
   greeting.textContent = 'Hello World';
