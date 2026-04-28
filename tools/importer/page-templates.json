@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "projectType": "doc"
+  },
+  "templates": [
+    {
+      "name": "portfolio",
+      "urls": [
+        "file:///workspace/portfolio.html"
+      ],
+      "description": "Single-page portfolio for a Technical Architect featuring hero, stats bar, work experience timeline, technical skills grid, certifications cards, independent projects, and contact section",
+      "blocks": [
+        {
+          "name": "hero",
+          "instances": [
+            "section#hero .hero-content"
+          ]
+        },
+        {
+          "name": "columns",
+          "instances": [
+            "div.stats-bar"
+          ]
+        },
+        {
+          "name": "experience",
+          "instances": [
+            "section#experience .timeline"
+          ]
+        },
+        {
+          "name": "cards",
+          "instances": [
+            "section#skills .skills-grid",
+            "section#certifications .certs-grid",
+            "section#independent .projects-grid"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-hero",
+          "name": "Hero",
+          "selector": "section#hero",
+          "style": "dark",
+          "blocks": [
+            "hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-stats",
+          "name": "Stats Bar",
+          "selector": "div.stats-bar",
+          "style": "dark-surface",
+          "blocks": [
+            "columns"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-experience",
+          "name": "Work Experience",
+          "selector": "section#experience",
+          "style": "dark-alt",
+          "blocks": [
+            "experience"
+          ],
+          "defaultContent": [
+            "section#experience .section-header h2"
+          ]
+        },
+        {
+          "id": "section-skills",
+          "name": "Technical Skills",
+          "selector": "section#skills",
+          "style": "dark",
+          "blocks": [
+            "cards"
+          ],
+          "defaultContent": [
+            "section#skills .section-header h2"
+          ]
+        },
+        {
+          "id": "section-certifications",
+          "name": "Certifications",
+          "selector": "section#certifications",
+          "style": "dark-alt",
+          "blocks": [
+            "cards"
+          ],
+          "defaultContent": [
+            "section#certifications .section-header h2"
+          ]
+        },
+        {
+          "id": "section-projects",
+          "name": "Independent Projects",
+          "selector": "section#independent",
+          "style": "dark",
+          "blocks": [
+            "cards"
+          ],
+          "defaultContent": [
+            "section#independent .section-header h2"
+          ]
+        },
+        {
+          "id": "section-contact",
+          "name": "Contact",
+          "selector": "section#contact",
+          "style": "dark-alt",
+          "blocks": [],
+          "defaultContent": [
+            "section#contact .contact-badge",
+            "section#contact .contact-headline",
+            "section#contact .contact-links",
+            "section#contact .hero-cta"
+          ]
+        },
+        {
+          "id": "section-footer",
+          "name": "Footer",
+          "selector": "footer",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "footer .footer-text"
+          ]
+        }
+      ]
+    }
+  ]
+}

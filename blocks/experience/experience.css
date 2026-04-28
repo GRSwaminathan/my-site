@@ -1,0 +1,115 @@
+.experience {
+  position: relative;
+}
+
+.experience::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(180deg, var(--accent-color), var(--accent-dim), transparent);
+}
+
+.experience .experience-entry {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  border: none;
+}
+
+.experience .experience-entry:last-child {
+  margin-bottom: 0;
+}
+
+.experience .experience-entry::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  border: 1px solid var(--accent-color);
+  background: var(--background-color-alt);
+  border-radius: 50%;
+}
+
+.experience .experience-header {
+  margin-bottom: 0.25rem;
+}
+
+.experience .experience-header p,
+.experience .experience-details p {
+  margin: 0 0 4px;
+  line-height: 1.4;
+}
+
+.experience .experience-header p:first-child {
+  font-family: var(--heading-font-family);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 1.25;
+}
+
+.experience .experience-details p:first-child {
+  font-size: 0.8rem;
+  color: var(--accent-color);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.experience .experience-details p:nth-child(2) {
+  font-family: var(--mono-font-family);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.experience .experience-details ul {
+  list-style: none;
+  margin-top: 0.5rem;
+  padding-left: 0;
+}
+
+.experience .experience-details li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.35rem 0 0.35rem 1rem;
+  position: relative;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.experience .experience-details li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent-dim);
+  font-size: 0.75rem;
+}
+
+.experience .experience-details li strong {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+@media (width >= 900px) {
+  .experience .experience-entry {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .experience .experience-header {
+    flex: 0 0 260px;
+  }
+
+  .experience .experience-details {
+    flex: 1;
+  }
+}

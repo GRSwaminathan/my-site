@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "file:///workspace/portfolio.html",
+  "path": "workspace/portfolio",
+  "timestamp": "2026-04-28T08:37:06.850Z",
+  "title": "Swaminathan GR · Technical Architect",
+  "template": "portfolio",
+  "blocks": [
+    "hero",
+    "columns",
+    "experience",
+    "cards",
+    "cards",
+    "cards"
+  ]
+}
